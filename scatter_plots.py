@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-data = pd.read_csv("data.csv", sep=";")
+data = pd.read_csv("data/data.csv", sep=";")
 
 # PLOT SCATTER: ALPHA
 plt.scatter(data.age, data.weight,
