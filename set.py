@@ -1,3 +1,11 @@
+###############################################
+
+list_with_duplicates2 = [1, 3, 5, 1, 4, 3, 6, 7, 6]
+list_without_duplicates2 = list(set(list_with_duplicates2))
+print(list_without_duplicates2)  # [1, 3, 4, 5, 6, 7]
+
+###############################################
+
 set1 = {"apple", "banana", "cherry", "apple"}
 # no duplicate values: {'apple', 'cherry', 'banana'}
 print(set1)
@@ -58,13 +66,16 @@ set5.discard(10)
 
 print(set5)  # {3, 5, 6, 7, 8, 9} -> delete 4,2,10
 
+###############################################
+
 new_list = [1, 2, 3, 2, 1, 3, 3, 4]
 print(new_list)  # [1, 2, 3, 2, 1, 3, 3, 4]
 
 set_from_list = set(new_list)
 print(set_from_list)  # {1, 2, 3, 4}
 
-###############################################
+list_without_duplicates = list(set_from_list)
+print(list_without_duplicates)  # [1, 2, 3, 4]
 
 # intersection, difference, issubset
 
@@ -91,5 +102,5 @@ print(set_issubset_1_2)  # False
 set_issubset_1_4 = s1.issubset(s4)
 print(set_issubset_1_4)  # True
 
-
-
+set_sym_difference_1_2 = s1.symmetric_difference(s2)
+print(set_sym_difference_1_2)  # {1, 4}
