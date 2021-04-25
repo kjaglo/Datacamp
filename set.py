@@ -104,3 +104,29 @@ print(set_issubset_1_4)  # True
 
 set_sym_difference_1_2 = s1.symmetric_difference(s2)
 print(set_sym_difference_1_2)  # {1, 4}
+
+###############################################
+
+teachers = ["Marry", "Frank", "Nathan", "Leon", "Katie"]
+
+students = ["Dan", "Carl", "Cris", "Mark", "Hannah", "Ana"]
+
+women = ["Hannah", "Ana", "Marry", "Katie"]
+
+men = ["Dan", "Carl", "Cris", "Mark", "Frank", "Nathan", "Leon"]
+
+female_students = list(set(students).intersection(set(women)))  # set(women) is optional, women as list also works
+print(female_students)  # ['Hannah', 'Ana']
+
+not_female_students = list(set(students).difference(set(women)))  # set(women) is optional, women as list also works
+print(not_female_students)  # ['Mark', 'Dan', 'Cris', 'Carl']
+
+if "Dan" in students:
+    print("Dan is a student")  # <-
+else:
+    print("Dan is not a student")
+
+# O(n) for a list (whole list)
+# O(1) for a set
+
+###############################################
