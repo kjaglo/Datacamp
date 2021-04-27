@@ -28,11 +28,3 @@ print(person2)  # {'person_id': 2, 'name': 'Sara', 'surname': 'Ray'}
 
 person3 = dict(person_id=3, name="Leon")  # " " no needed
 print(person3)  # {'person_id': 3, 'name': 'Leon'}
-
-
-
-
-
-
-
-
