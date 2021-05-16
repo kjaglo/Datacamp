@@ -1,0 +1,5 @@
+value = """
+    {"title": "Tron: Legacy",
+    "budget: 18000000",
+    "year: 2011"
+    }"""
