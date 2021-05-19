@@ -35,3 +35,26 @@ radius = lambda planet: planet[1]
 planets.sort(key=radius, reverse=True)
 print(planets)
 
+dens = lambda planet: planet[2]
+planets.sort(key=dens, reverse=True)
+print(planets)
+
+help(sorted)
+
+# sorted(iterable, /, *, key = None, reverse = False)
+# Return a new list containing all items from the iterable in ascending order.
+#
+# A custom key function can be supplied to customize the
+# sort order, and the reverse flag can be set to request
+# the  result in descending order.
+
+planets_sorted = sorted(planets)
+print(planets)
+print(planets_sorted)
+
+tuple_int = (1, 9, 2, 3, 4, 7, 6, 5, 8)
+tuple_int_sorted = sorted(tuple_int)
+print(tuple_int_sorted)  # sorted list: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(sorted("Python is cool"))
+# [' ', ' ', 'P', 'c', 'h', 'i', 'l', 'n', 'o', 'o', 'o', 's', 't', 'y']
