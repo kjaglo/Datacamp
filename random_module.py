@@ -47,4 +47,14 @@ for i in range(10):
     print(random.randint(1, 10))
 
 
-game = ['paper', 'rock']
+
+print(help(random.choice))
+
+#choice(seq) method of random.Random instance
+#Choose a random element from a non-empty sequence.
+
+
+game = ['paper', 'rock', 'scissors']
+
+for i in range(10):
+    print(random.choice(game))
